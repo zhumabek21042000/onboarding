@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+}
+#page-1 {
+    background: linear-gradient(180deg, #FF8652 8.33%, #E52924 52.6%);
+}
+
+.page {
+    display: grid;
+    grid-auto-rows: 1fr;
+    height: 100vh;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.content.text {
+    text-align: center;
+    color: #FFFFFF;
+    gap: 22px;
+}
+
+.content.actions {
+    gap: 12px;
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px
+}
+
+
+#page-2 {
+    background: #FCFCFC;
+}
+
+#page-3 {
+    width: 100%;
+    background: url('../assets/images/background_4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.content-2{
+    height: 100%;
+    position: relative;
+    background: url('../assets/images/background_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-2.coin-left {
+    position: absolute;
+    left: 15%;
+    top: -4%;
+    transform: rotate(-15deg);
+    background: transparent;
+}
+
+.content-2.coin-right {
+    position: absolute;
+    background: transparent;
+}
+
+.coin-group .coin-first {
+    position: absolute;
+    left: 30px;
+    top: -7%;
+    background: transparent;
+}
+
+.coin-group .coin-second {
+    position: absolute;
+    top: -7%;
+    background: transparent;
+}
+
+
+.content-3{
+    height: 100%;
+    position: relative;
+    background: url(../assets/images/background_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styles for buttons and texts, animations and colors */
+.btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+
+.btn-next {
+    width: 90%;
+    padding: 16px 16px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E52924;
+    border-radius: 5px;
+}
+
+.btn.back {
+    color: #737373;
+}
+
+.btn.skip {
+    color: #FFFFFF;
+}
+
+.text-17-m {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.text-17-b {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.text-15-m {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h4 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130.84%;
+}
+
+.dots {
+    margin-top: 20px
+}
+.hidden {
+    display: none;
+}
+
+@keyframes coupon_list {
+    from {
+      opacity: 0;
+      transform: none;
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, -60%, 0);
+    }
+ }
+ .coupon_list {
+    width: 65%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 450px;
+    left: 1px;
+    right: 0;
+    animation-name: coupon_list;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.red {
+    color: #e52924 !important;
+} 
+
+.memory-cards {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards-row {
+    flex-direction: row;
+}

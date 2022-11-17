@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="scripts/script.js"></script>
+    <script src="scripts/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <section id="page-1" class="page">
+      <div class="column">
+        <div class="action-buttons">
+          <button class="btn back text-17-m"></button>
+          <button class="btn skip text-17-m">Skip</button>
+        </div>
+
+        <div class="poster">
+          <img src="assets/images/background_1.png" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <div class="content text">
+            <h4 style="margin: 0 80px">Welcome to enjoyyit</h4>
+            <span class="text-15-m"
+              >Visit your favorite places and get bonuses!</span
+            >
+          </div>
+
+          <div class="content actions">
+            <button class="btn-next text-17-b red" onclick="next(1)">
+              Next
+            </button>
+
+            <div class="dots">
+              <img src="assets/icons/dot_active.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-2" class="page hidden">
+      <div class="column" style="justify-content: flex-start;">
+        <div id="coupon_list" class="coupon_list"></div>
+        <div class="action-buttons">
+          <button class="btn back text-17-m" onclick="back(2)">Back</button>
+          <button class="btn text-17-m red">Skip</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content content-2">
+          <div class="content text" style="margin-top: 15px">
+            <h4 style="margin: 0 50px">
+              Collect enjoyyits and redeem for coupons
+            </h4>
+            <span class="text-15-m"
+              >Choose discounts according to your interests</span
+            >
+          </div>
+
+          <div class="content actions">
+            <button class="btn-next text-17-b red" onclick="next(2)">
+              Next
+            </button>
+
+            <div class="dots">
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot_active.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-3" class="page hidden">
+      <div class="column">
+        <div class="action-buttons">
+          <button class="btn back text-17-m" onclick="back(3)">Back</button>
+          <button class="red btn skip text-17-m">Skip</button>
+        </div>
+        <div class="memory-cards">
+          <div class="cards-row">
+            <img src="assets/icons/memory_card.png" />
+            <img src="assets/icons/memory_card.png" />
+          </div>
+          <div class="cards-row">
+            <img src="assets/icons/memory_card.png" />
+            <img src="assets/icons/memory_card.png" />
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content content-3" >
+          <div class="content text">
+            <h4 style="margin: 0 80px">Enjoy games and win real gifts</h4>
+            <span class="text-15-m">Get limited coupons from partners</span>
+          </div>
+
+          <div class="content actions">
+            <button class="btn-next text-17-b red" onclick="next(3)">
+              Next
+            </button>
+
+            <div class="dots">
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot_active.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-6" class="page hidden">
+      <div class="column">
+        <div id="coupon_list" class="coupon_list"></div>
+        <div class="action-buttons">
+          <button class="btn bac text-17-m" onclick="back(2)">Back</button>
+          <button class="btn skip text-17-m" style="color: #e52924">
+            Skip
+          </button>
+        </div>
+
+        <div class="poster" style="height: 50vh"></div>
+      </div>
+      <div class="column">
+        <div class="content content-2">
+          <div class="content text">
+            <h4 style="margin: 0 20px; text-align: center">
+              Collect enjoyyits and redeem for coupons
+            </h4>
+            <span class="text-15-m"
+              >Choose discounts according to your interests</span
+            >
+          </div>
+
+          <div class="content actions">
+            <button
+              class="btn-next text-17-b"
+              style="color: #e52924"
+              onclick="next(2)"
+            >
+              Next
+            </button>
+            <div class="dots">
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot_active.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+              <img src="assets/icons/dot.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
