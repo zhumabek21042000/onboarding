@@ -5,9 +5,7 @@ function next(id){
     nextPage.classList.remove("hidden");
 
     if(parseInt(id) === 1){
-        $(function(){
-            $("#coupon_list").load("../coupon.html"); 
-          });
+        couponsAnimation();
     }
 }
 
@@ -17,8 +15,16 @@ function back(id){
     currentPage.classList.add("hidden");
     previousPage.classList.remove("hidden")
     if(parseInt(id) - 1 === 2){
-        $(function(){
-            $("#coupon_list").load("../coupon.html"); 
-        });
+        couponsAnimation();
     }
+}
+
+function couponsAnimation(){
+    $(function(){
+        $("#coupon_list").load("../coupon.html"); 
+      });
+}
+
+function cardsAnimation(){
+    
 }
