@@ -1,5 +1,5 @@
 .text-17-m {
-  font-family: "DM Sans";
+  font-family: "DM Sans Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -7,7 +7,7 @@
 }
 
 .text-17-b {
-  font-family: "DM Sans";
+  font-family: "DM Sans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -15,7 +15,7 @@
 }
 
 .text-15-m {
-  font-family: "DM Sans";
+  font-family: "DM Sans Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -23,7 +23,7 @@
 }
 
 h4 {
-  font-family: "DM Sans";
+  font-family: "DM Sans Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -31,7 +31,7 @@ h4 {
 }
 
 h3 {
-  font-family: "DM Sans";
+  font-family: "DM Sans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -39,7 +39,7 @@ h3 {
 }
 
 h2 {
-  font-family: "DM Sans";
+  font-family: "DM Sans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

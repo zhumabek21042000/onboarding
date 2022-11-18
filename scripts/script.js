@@ -10,12 +10,12 @@ function next(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 4500);
+    }, 2500);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 100);
+    }, 50);
   }
 }
 
@@ -30,12 +30,12 @@ function back(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 4500);
+    }, 2500);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 100);
+    }, 50);
   }
 }
 

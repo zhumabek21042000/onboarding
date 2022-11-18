@@ -39,7 +39,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card-inner {
   animation: flip_card;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -64,11 +64,27 @@
   transform: rotateY(180deg);
 }
 
-.memory-cards-prize{
+.memory-cards-prize {
+  animation: scaleInOut 0.5s forwards;
   align-self: center;
-    margin: auto;
-    width: 80%;
-    text-align: start;
+  margin: auto;
+  width: 80%;
+  text-align: start;
+}
+
+@keyframes scaleInOut {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.7, 0.7);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 .prize {
