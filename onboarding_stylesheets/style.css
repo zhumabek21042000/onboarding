@@ -20,7 +20,7 @@ body {
 #page-3,
 #page-4 {
   width: 100%;
-  background: url("../assets/images/background_4.png");
+  background: url("../onboarding_assets/images/background_4.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -98,11 +98,11 @@ body {
 
 .content-img.page-2,
 .content-img.page-3 {
-  background: url("../assets/images/background_2.png");
+  background: url("../onboarding_assets/images/background_2.png");
 }
 
 .content-img.page-4 {
-  background: url("../assets/images/background_5.png");
+  background: url("../onboarding_assets/images/background_5.png");
 }
 
 .coin-left {

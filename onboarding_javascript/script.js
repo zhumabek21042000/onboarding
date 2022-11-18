@@ -54,7 +54,6 @@ function couponsAnimation() {
 }
 
 function openLogin() {
-  console.log("login");
   if (window?.Android && typeof window.Android.openLogin == "function") {
     Android.openLogin();
     return null;

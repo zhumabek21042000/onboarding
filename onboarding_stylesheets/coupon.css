@@ -77,7 +77,7 @@ body {
 .coupon-card_body_top .coin {
   background: #f5f5f8;
   border-radius: 5.90545px;
-  background-image: url("../assets/icons/enjoyyit_coin.png");
+  background-image: url("../onboarding_assets/icons/enjoyyit_coin.png");
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
@@ -156,7 +156,7 @@ body {
   background: linear-gradient(273.77deg, #ffbc0d 1.29%, #ffa800 98.14%);
 }
 .coupon-card.type-loyalty .coin {
-  background-image: url("../assets/icons/enjoyyit_coin.png");
+  background-image: url("../onboarding_assets/icons/enjoyyit_coin.png");
 }
 
 @media only screen and (max-height: 700px), screen and (max-width: 360px) {
