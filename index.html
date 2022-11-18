@@ -13,7 +13,7 @@
     <script src="scripts/jquery-3.6.1.min.js"></script>
   </head>
   <body>
-    <section id="page-1" class="page hidden">
+    <section id="page-1" class="page">
       <div class="column">
         <div class="action-buttons">
           <button class="btn back text-17-m"></button>
@@ -76,6 +76,9 @@
         <div class="coins-right">
           <img src="assets/icons/right_coins.png" />
         </div>
+        <div class="arrow-up">
+          <img src="assets/icons/arrow_up.png"/>
+        </div>
         <div class="content content-img page-2">
           <div class="content text">
             <h4 style="margin: 0 20px">
@@ -105,7 +108,7 @@
       </div>
     </section>
 
-    <section id="page-3" class="page">
+    <section id="page-3" class="page hidden">
       <div class="column half-height" style="justify-content: flex-start">
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(3)">Back</button>
@@ -208,6 +211,12 @@
         <div class="qr-icon">
           <img src="assets/icons/qr.png" />
         </div>
+        <div class="loyalty">
+          <img src="assets/svg/loyalty.svg"/>
+        </div>
+        <div class="arrow-down">
+          <img src="assets/icons/arrow_down.png"/>
+        </div>
         <div class="content content-img page-4">
           <div class="content text">
             <h4 style="margin: 0 20px">Show your QR code at our partners</h4>
@@ -254,7 +263,7 @@
         <div class="content content-img page-4">
           <div class="content text">
             <h4 style="margin: 0 20px">Exchange loyalty for coupons</h4>
-            <span class="text-15-m"
+            <span class="text-15-m" style="margin: 0 15px"
               >Loyalty can only be exchanged at the institution where you
               received it</span
             >

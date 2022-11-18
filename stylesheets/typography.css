@@ -22,20 +22,44 @@
   line-height: 20px;
 }
 
+.text-12-b {
+  font-family: "DM Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-11-m {
+  font-family: "DM Sans Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.caption-13-r {
+  font-family: "DM Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.caption-h3, h3 {
+  font-family: "DM Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
 h4 {
   font-family: "DM Sans Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 130.84%;
-}
-
-h3 {
-  font-family: "DM Sans Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
 }
 
 h2 {
@@ -55,5 +79,20 @@ h2 {
 }
 
 .white {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.gray {
+  color: #737373;
+}
+@media only screen and (max-height: 740px), screen and (max-width: 400px) {
+  h4 {
+    font-size: 34px;
+    line-height: 100%;
+  }
+  
+  h2 {
+    font-size: 13px;
+    line-height: 26px;
+  }
 }

@@ -15,7 +15,7 @@ function next(id) {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 50);
+    }, 1);
   }
 }
 
@@ -35,7 +35,7 @@ function back(id) {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 50);
+    }, 1);
   }
 }
 

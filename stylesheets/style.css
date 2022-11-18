@@ -58,6 +58,15 @@ body {
   .content.text {
     margin-bottom: 50px;
   }
+
+  .loyalty {
+    right: 4% !important;
+    top: 55% !important;
+  }
+  .arrow-down {
+    right: 17% !important;
+    top: 56% !important;
+  }
 }
 
 .content {
@@ -118,6 +127,26 @@ body {
   top: -11%;
   transform: rotate(-10deg);
   background: transparent;
+}
+
+.arrow-up {
+  z-index: 1;
+  position: absolute;
+  right: 7%;
+  top: 11%;
+}
+
+.loyalty {
+  z-index: 1;
+  position: absolute;
+  right: 10%;
+  top: 64%;
+}
+.arrow-down {
+  z-index: 1;
+  position: absolute;
+  right: 21%;
+  top: 64%;
 }
 
 .dots {
