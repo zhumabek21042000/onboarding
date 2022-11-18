@@ -30,10 +30,30 @@ h4 {
   line-height: 130.84%;
 }
 
+h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h2 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
 .black {
   color: #222222 !important;
 }
 
 .red {
   color: #e52924 !important;
+}
+
+.white {
+  color: #FFFFFF;
 }

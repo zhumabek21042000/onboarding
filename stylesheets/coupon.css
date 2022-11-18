@@ -218,9 +218,9 @@ body {
   position: absolute;
   right: 24%;
   top: -8px;
-  animation: animated_coupon 1s forwards;
+  animation: animated_coupon 0.5s forwards;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .loyalty-coupon-list img:nth-child(4) {
