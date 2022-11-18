@@ -13,11 +13,11 @@
     <script src="scripts/jquery-3.6.1.min.js"></script>
   </head>
   <body>
-    <section id="page-1" class="page hidden">
+    <section id="page-1" class="page">
       <div class="column">
         <div class="action-buttons">
           <button class="btn back text-17-m"></button>
-          <button class="btn skip text-17-m">Skip</button>
+          <button class="btn skip text-17-m" onclick="skip(1)">Skip</button>
         </div>
 
         <div class="poster">
@@ -27,7 +27,7 @@
       <div class="column">
         <div class="content">
           <div class="content text">
-            <h4 style="margin: -90px 90px 30px 90px;">Welcome to enjoyyit</h4>
+            <h4 style="margin: -90px 90px 30px 90px">Welcome to enjoyyit</h4>
             <span class="text-15-m"
               >Visit your favorite places and get bonuses!</span
             >
@@ -63,18 +63,18 @@
         </div>
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(2)">Back</button>
-          <button class="btn text-17-m red">Skip</button>
+          <button class="btn text-17-m red" onclick="skip(2)">Skip</button>
         </div>
       </div>
       <div class="column">
         <div class="coin-left">
-          <img src="assets/icons/left_coin.png" />
+          <img src="assets/svg/left_coin.svg" />
         </div>
         <div class="coin-right">
-          <img src="assets/icons/right_coin.png" />
+          <img src="assets/svg/right_coin.svg" />
         </div>
         <div class="coins-right">
-          <img src="assets/icons/right_coins.png" />
+          <img src="assets/svg/right_coins.svg" />
         </div>
         <div class="arrow-up">
           <img src="assets/icons/arrow_up.png" />
@@ -112,7 +112,7 @@
       <div class="column half-height" style="justify-content: flex-start">
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(3)">Back</button>
-          <button class="red btn skip text-17-m">Skip</button>
+          <button class="red btn skip text-17-m" onclick="skip(3)">Skip</button>
         </div>
         <div class="memory-cards">
           <div class="cards-row" style="margin-left: -80px">
@@ -204,12 +204,12 @@
       <div class="column half-height" style="justify-content: flex-start">
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(4)">Back</button>
-          <button class="red btn skip text-17-m">Skip</button>
+          <button class="red btn skip text-17-m" onclick="skip(1)">Skip</button>
         </div>
       </div>
       <div class="column half-height">
         <div class="qr-icon">
-          <img src="assets/icons/qr.png" />
+          <img src="assets/svg/qr.svg" />
         </div>
         <div class="loyalty">
           <img src="assets/svg/loyalty.svg" />
@@ -245,11 +245,11 @@
       </div>
     </section>
 
-    <section id="page-5" class="page">
+    <section id="page-5" class="page hidden">
       <div class="column half-height" style="justify-content: flex-start">
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(5)">Back</button>
-          <button class="red btn skip text-17-m">Skip</button>
+          <button class="red btn skip text-17-m" onclick="skip(5)">Skip</button>
         </div>
         <div id="loyalty_coupons">
           <script>
@@ -298,7 +298,7 @@
       <div class="column full-height" style="justify-content: flex-start">
         <div class="content" style="gap: 0">
           <h4 class="black no-space">Join now!</h4>
-          <div class="poster">
+          <div style="text-align: center;">
             <img src="assets/images/background_6.png" />
           </div>
 

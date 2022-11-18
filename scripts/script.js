@@ -15,7 +15,7 @@ function next(id) {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 1);
+    }, 100);
   }
 }
 
@@ -35,8 +35,16 @@ function back(id) {
     setTimeout(() => {
       prize.classList.add("hidden");
       prize.previousElementSibling.classList.remove("hidden");
-    }, 1);
+    }, 100);
   }
+}
+
+function skip(id){
+  var currentPage = document.getElementById(`page-${id}`);
+  currentPage.classList.add("hidden");
+
+  var lastPage = document.getElementById("page-6");
+  lastPage.classList.remove("hidden")
 }
 
 function couponsAnimation() {

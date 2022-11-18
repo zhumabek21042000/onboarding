@@ -49,7 +49,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-height: 740px), screen and (max-width: 400px) {
+@media only screen and (max-height: 700px), screen and (max-width: 360px) {
   .poster img {
     width: 86%;
     height: 96%;
@@ -61,7 +61,7 @@ body {
 
   .loyalty {
     right: 4% !important;
-    top: 55% !important;
+    top: 54% !important;
   }
   .arrow-down {
     right: 17% !important;
