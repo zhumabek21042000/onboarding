@@ -1,163 +1,240 @@
 body {
-    font-family:  'DM Sans';
+  font-family: "DM Sans";
 }
 
 .coupon-card {
-    display: flex;
-    width: 100%;
-    min-height: 128px;
-    max-height: 100%;
-    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.04)) drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.04));
-    overflow: hidden;
-    max-width: 600px;
-    padding: 8px 0px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 128px;
+  max-height: 100%;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.04))
+    drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.04));
+  overflow: hidden;
+  max-width: 600px;
+  padding: 8px 0px;
 }
 .coupon-card_tag {
-    border-radius: 10px 0 0 10px;
-    flex: 1 100%;
-    max-width: 44px;
-    position: relative;
-    background: radial-gradient(circle at left bottom, transparent 10px, #ff8987 0) right top/100% 50% no-repeat, radial-gradient(circle at left top, transparent 10px, #ff8987 0) right bottom/100% 50% no-repeat;
+  border-radius: 10px 0 0 10px;
+  flex: 1 100%;
+  max-width: 44px;
+  position: relative;
+  background: radial-gradient(
+        circle at left bottom,
+        transparent 10px,
+        #ff8987 0
+      )
+      right top/100% 50% no-repeat,
+    radial-gradient(circle at left top, transparent 10px, #ff8987 0) right
+      bottom/100% 50% no-repeat;
 }
 .coupon-card_tag-name {
-    position: absolute;
-    display: flex;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    top: 50%;
-    left: calc(50% + 4px);
-    transform: translate(-50%, -50%) rotate(-90deg);
+  position: absolute;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  top: 50%;
+  left: calc(50% + 4px);
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 .coupon-card_tag-name img {
-    width: 18px;
-    height: 18px;
-    transform: rotate(90deg);
+  width: 18px;
+  height: 18px;
+  transform: rotate(90deg);
 }
 .coupon-card_body {
-    border-radius: 0 10px 10px 0;
-    flex: 1;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    background: radial-gradient(circle at right bottom, transparent 10px, #fff 0) left top/100% 50% no-repeat, radial-gradient(circle at right top, transparent 10px, #fff 0) left bottom/100% 50% no-repeat;
+  border-radius: 0 10px 10px 0;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: radial-gradient(circle at right bottom, transparent 10px, #fff 0)
+      left top/100% 50% no-repeat,
+    radial-gradient(circle at right top, transparent 10px, #fff 0) left
+      bottom/100% 50% no-repeat;
 }
 .coupon-card_body_top {
-    display: grid;
-    grid-template-areas: "company offer" "name offer" "price offer";
-    grid-template-columns: 1fr auto;
+  display: grid;
+  grid-template-areas: "company offer" "name offer" "price offer";
+  grid-template-columns: 1fr auto;
 }
 .coupon-card_body_top_company-name {
-    grid-area: company;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    color: #737373;
+  grid-area: company;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #737373;
 }
 .coupon-card_body_top_name {
-    grid-area: name;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 22px;
+  grid-area: name;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
 }
 .coupon-card_body_top .coin {
-    background: #F5F5F8;
-    border-radius: 5.90545px;
-    background-image: url("../assets/icons/enjoyyit_coin.png");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 16px;
-    justify-self: start;
-    font-weight: 700;
-    font-size: 17px;
-    margin: 8px 0;
-    min-width: 0;
-    line-height: 18px;
-    padding: 4px calc(16px + 18px + 4px) 4px 16px;
+  background: #f5f5f8;
+  border-radius: 5.90545px;
+  background-image: url("../assets/icons/enjoyyit_coin.png");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  justify-self: start;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 8px 0;
+  min-width: 0;
+  line-height: 18px;
+  padding: 4px calc(16px + 18px + 4px) 4px 16px;
 }
 .coupon-card_body_top_offer {
-    grid-area: offer;
+  grid-area: offer;
 }
 .coupon-card_body_top_offer-type {
-    color: #737373;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: right;
+  color: #737373;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
 }
 .coupon-card_body_top_offer-value {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
 }
 .coupon-card_body_bottom {
-    align-items: end;
-    display: grid;
-    grid-template-areas: "label button" "date button";
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr auto;
+  align-items: end;
+  display: grid;
+  grid-template-areas: "label button" "date button";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
 }
 .coupon-card_body_bottom_expiration-date-label {
-    grid-area: label;
-    color: #737373;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
+  grid-area: label;
+  color: #737373;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
 }
 .coupon-card_body_bottom_expiration-date {
-    grid-area: date;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
+  grid-area: date;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
 }
 .coupon-card_body_bottom .btn-medium {
-    grid-area: button;
+  grid-area: button;
 }
 .coupon-card_body .coupon-coin {
-    margin: 0.25rem 0 0.4375rem;
+  margin: 0.25rem 0 0.4375rem;
 }
 .coupon-card_items {
-    display: grid;
-    grid-auto-rows: 1fr;
-    margin-top: -16px;
-    padding: 0;
+  display: grid;
+  grid-auto-rows: 1fr;
+  margin-top: -16px;
+  padding: 0;
 }
 .coupon-card_items .coupon-card:first-of-type {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 .coupon-card_items .coupon-card:last-of-type {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 .coupon-card.type-loyalty .coupon-card_tag {
-    background: radial-gradient(circle at left bottom, transparent 10px, #fff4da 0) right top/100% 50% no-repeat, radial-gradient(circle at left top, transparent 10px, #fff4da 0) right bottom/100% 50% no-repeat;
+  background: radial-gradient(
+        circle at left bottom,
+        transparent 10px,
+        #fff4da 0
+      )
+      right top/100% 50% no-repeat,
+    radial-gradient(circle at left top, transparent 10px, #fff4da 0) right
+      bottom/100% 50% no-repeat;
 }
 .coupon-card.type-loyalty .btn-medium.primary {
-    background: linear-gradient(273.77deg, #ffbc0d 1.29%, #ffa800 98.14%);
+  background: linear-gradient(273.77deg, #ffbc0d 1.29%, #ffa800 98.14%);
 }
 .coupon-card.type-loyalty .coin {
-    background-image: url("../assets/icons/enjoyyit_coin.png");
+  background-image: url("../assets/icons/enjoyyit_coin.png");
 }
 
 .btn-medium {
-    padding: 8px;
-    min-width: 126px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    line-height: 1.375rem;
+  padding: 8px;
+  min-width: 126px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  line-height: 1.375rem;
 }
 .btn-medium.primary {
-    color: #fff;
-    background: linear-gradient(111.66deg,#EA6B35 9.1%,#E73A23 53.61%,#D5211C 101.26%);
+  color: #fff;
+  background: linear-gradient(
+    111.66deg,
+    #ea6b35 9.1%,
+    #e73a23 53.61%,
+    #d5211c 101.26%
+  );
 }
 
 .coupon-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.loyalty-coupon-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 30%;
+}
+
+.loyalty-coupon-list img:nth-child(1) {
+  position: absolute;
+  left: -26%;
+  top: 97px;
+  transform: rotate(-15deg);
+}
+
+.loyalty-coupon-list img:nth-child(2) {
+  position: absolute;
+  left: -3%;
+  top: 34px;
+  transform: rotate(-10deg);
+}
+
+.loyalty-coupon-list img:nth-child(3) {
+  position: absolute;
+  right: 24%;
+  top: -8px;
+  animation: animated_coupon 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+.loyalty-coupon-list img:nth-child(4) {
+  position: absolute;
+  transform: rotate(-2deg);
+  right: -2%;
+  top: 16px;
+}
+
+@keyframes animated_coupon {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(0, -20%, 0);
+  }
 }

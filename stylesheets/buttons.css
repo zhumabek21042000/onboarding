@@ -1,0 +1,46 @@
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.btn-next {
+  width: 90%;
+  padding: 16px 16px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e52924;
+  border-radius: 5px;
+}
+
+.btn.black {
+  color: #737373;
+} 
+
+.btn.skip {
+  color: #ffffff;
+}
+
+.btn.login {
+  width: 90%;
+  padding: 16px 16px;
+  background: linear-gradient(
+    111.66deg,
+    #ea6b35 9.1%,
+    #e73a23 53.61%,
+    #d5211c 101.26%
+  );
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.btn.register {
+    width: 90%;
+    padding: 16px 16px;
+}

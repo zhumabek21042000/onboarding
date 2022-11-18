@@ -1,0 +1,39 @@
+.text-17-m {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.text-17-b {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text-15-m {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h4 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130.84%;
+}
+
+.black {
+  color: #222222 !important;
+}
+
+.red {
+  color: #e52924 !important;
+}

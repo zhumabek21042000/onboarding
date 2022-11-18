@@ -9,6 +9,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/typography.css" />
+    <link rel="stylesheet" href="stylesheets/buttons.css" />
+    <link rel="stylesheet" href="stylesheets/memory.css" />
     <script src="scripts/script.js"></script>
     <script src="scripts/jquery-3.6.1.min.js"></script>
   </head>
@@ -27,7 +30,7 @@
       <div class="column">
         <div class="content">
           <div class="content text">
-            <h4 style="margin: 0 80px">Welcome to enjoyyit</h4>
+            <h4 style="margin: -90px 0 30px 0">Welcome to enjoyyit</h4>
             <span class="text-15-m"
               >Visit your favorite places and get bonuses!</span
             >
@@ -54,7 +57,13 @@
 
     <section id="page-2" class="page hidden">
       <div class="column" style="justify-content: flex-start">
-        <div id="coupon_list" class="coupon_list"></div>
+        <div id="coupon_list" class="coupon_list">
+          <script>
+            $(function () {
+              $("#coupon_list").load("../coupon.html");
+            });
+          </script>
+        </div>
         <div class="action-buttons">
           <button class="btn back text-17-m" onclick="back(2)">Back</button>
           <button class="btn text-17-m red">Skip</button>
@@ -70,7 +79,7 @@
         <div class="coins-right">
           <img src="assets/icons/right_coins.png" />
         </div>
-        <div class="content content-2">
+        <div class="content content-img page-2">
           <div class="content text">
             <h4 style="margin: 0 20px">
               Collect enjoyyits and redeem for coupons
@@ -106,18 +115,59 @@
           <button class="red btn skip text-17-m">Skip</button>
         </div>
         <div class="memory-cards">
-          <div class="cards-row">
-            <img src="assets/icons/memory_card.png" />
-            <img src="assets/icons/memory_card.png" />
+          <div class="cards-row" style="margin-left: -80px">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/icons/memory_card.png" />
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/icons/unfold_card_1.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card" style="margin-left: 80px">
+              <div class="flip-card-inner" style="animation-delay: 3.5s">
+                <div class="flip-card-front">
+                  <img src="assets/icons/memory_card.png" />
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/icons/unfold_card_2.png" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cards-row">
-            <img src="assets/icons/memory_card.png" />
-            <img src="assets/icons/memory_card.png" />
+          <div class="cards-row" style="margin-left: -80px; margin-top: 80px">
+            <div class="flip-card">
+              <div class="flip-card-inner" style="animation-delay: 2.5s">
+                <div class="flip-card-front">
+                  <img src="assets/icons/memory_card.png" />
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/icons/unfold_card_2.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card" style="margin-left: 80px">
+              <div class="flip-card-inner" style="animation-delay: 1.5s">
+                <div class="flip-card-front">
+                  <img src="assets/icons/memory_card.png" />
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/icons/unfold_card_1.png" />
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="poster hidden" style="height: 80%" id="prize">
+          <img src="assets/icons/prize.png" />
         </div>
       </div>
       <div class="column half-height">
-        <div class="content content-3">
+        <div class="content content-img page-3">
           <div class="content text">
             <h4 style="margin: 0 20px">Enjoy games and win real gifts</h4>
             <span class="text-15-m">Get limited coupons from partners</span>
@@ -148,16 +198,17 @@
           <button class="btn back text-17-m" onclick="back(4)">Back</button>
           <button class="red btn skip text-17-m">Skip</button>
         </div>
-      
       </div>
       <div class="column half-height">
         <div class="qr-icon">
-          <img src="assets/icons/qr.png"/>
+          <img src="assets/icons/qr.png" />
         </div>
-        <div class="content content-4">
+        <div class="content content-img page-4">
           <div class="content text">
             <h4 style="margin: 0 20px">Show your QR code at our partners</h4>
-            <span class="text-15-m">By visiting a partner you earn loyalty</span>
+            <span class="text-15-m"
+              >By visiting a partner you earn loyalty</span
+            >
           </div>
 
           <div class="content actions">
@@ -182,31 +233,37 @@
     <section id="page-5" class="page hidden">
       <div class="column half-height" style="justify-content: flex-start">
         <div class="action-buttons">
-          <button class="btn back text-17-m" onclick="back(4)">Back</button>
+          <button class="btn back text-17-m" onclick="back(5)">Back</button>
           <button class="red btn skip text-17-m">Skip</button>
         </div>
-      
+        <div id="loyalty_coupons">
+          <script>
+            $(function () {
+              $("#loyalty_coupons").load("loyalty_coupon.html");
+            });
+          </script>
+        </div>
       </div>
       <div class="column half-height">
-        <div class="qr-icon">
-          <img src="assets/icons/qr.png"/>
-        </div>
-        <div class="content content-4">
+        <div class="content content-img page-4">
           <div class="content text">
-            <h4 style="margin: 0 20px">Exchange loyalty  for coupons</h4>
-            <span class="text-15-m">Loyalty can only be exchanged at the institution where you received it</span>
+            <h4 style="margin: 0 20px">Exchange loyalty for coupons</h4>
+            <span class="text-15-m"
+              >Loyalty can only be exchanged at the institution where you
+              received it</span
+            >
           </div>
 
           <div class="content actions">
             <div class="bottom">
-              <button class="btn-next text-17-b red" onclick="next(3)">
+              <button class="btn-next text-17-b red" onclick="next(5)">
                 Next
               </button>
 
               <div class="dots">
                 <img src="assets/icons/dot.png" />
                 <img src="assets/icons/dot.png" />
-                <img src="assets/icons/dot.png" />              
+                <img src="assets/icons/dot.png" />
                 <img src="assets/icons/dot.png" />
                 <img src="assets/icons/dot_active.png" />
               </div>
@@ -216,44 +273,30 @@
       </div>
     </section>
 
-    <section id="page-6" class="page hidden">
+    <section id="page-6" class="hidden">
       <div class="column">
-        <div id="coupon_list" class="coupon_list"></div>
         <div class="action-buttons">
-          <button class="btn bac text-17-m" onclick="back(2)">Back</button>
-          <button class="btn skip text-17-m" style="color: #e52924">
-            Skip
-          </button>
+          <button class="btn bac text-17-m" onclick="back(6)">Back</button>
+          <button class="btn skip text-17-m"></button>
         </div>
-
-        <div class="poster half-height"></div>
       </div>
-      <div class="column">
-        <div class="content content-2">
-          <div class="content text">
-            <h4 style="margin: 0 20px; text-align: center">
-              Collect enjoyyits and redeem for coupons
-            </h4>
-            <span class="text-15-m"
-              >Choose discounts according to your interests</span
-            >
+      <div class="column full-height" style="justify-content: flex-start">
+        <div class="content" style="gap: 0">
+          <h4 class="black no-space">Join now!</h4>
+          <div class="poster">
+            <img src="assets/images/background_6.png" />
           </div>
 
-          <div class="content actions">
-            <button
-              class="btn-next text-17-b"
-              style="color: #e52924"
-              onclick="next(2)"
-            >
-              Next
+          <div class="content actions" style="position: absolute; bottom: 15%">
+            <button class="btn login text-17-m" onclick="openLogin()">
+              Sign in
             </button>
-            <div class="dots">
-              <img src="assets/icons/dot.png" />
-              <img src="assets/icons/dot_active.png" />
-              <img src="assets/icons/dot.png" />
-              <img src="assets/icons/dot.png" />
-              <img src="assets/icons/dot.png" />
-            </div>
+            <button
+              class="btn register red text-17-m"
+              onclick="openRegistration()"
+            >
+              Register
+            </button>
           </div>
         </div>
       </div>

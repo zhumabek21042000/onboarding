@@ -1,261 +1,184 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 #page-1 {
-    background: linear-gradient(180deg, #FF8652 8.33%, #E52924 52.6%);
+  background: linear-gradient(180deg, #ff8652 8.33%, #e52924 52.6%);
 }
 
-#page-2 {
-    background: #FCFCFC;
+#page-2,
+#page-5,
+#page-6 {
+  background: #fcfcfc;
 }
 
-#page-3 {
-    width: 100%;
-    background: url('../assets/images/background_4.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
+#page-3,
 #page-4 {
-    width: 100%;
-    background: url('../assets/images/background_4.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#page-5 {
-    background: #FCFCFC;
+  width: 100%;
+  background: url("../assets/images/background_4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .page {
-    display: grid;
-    grid-auto-rows: 1fr;
-    height: 100vh;
-    overflow-y: hidden;
+  display: grid;
+  grid-auto-rows: 1fr;
+  height: 100vh;
+  overflow-y: hidden;
 }
+
 .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 .poster {
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
-.poster img{
-    width: 100%;
-    height: 100%;
+.poster img {
+  width: 100%;
+  height: 100%;
 }
 
-@media only screen and (min-height: 740px)  {
-    .poster img{
-        width: 86%;
-        height: 96%;
-    } 
+@media only screen and (max-height: 740px), screen and (max-width: 400px) {
+  .poster img {
+    width: 86%;
+    height: 96%;
+  }
 
-    .content.text {
-        margin-bottom: 50px;
-    }
+  .content.text {
+    margin-bottom: 50px;
+  }
 }
 
 .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    gap: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
 }
 
 .content.text {
-    text-align: center;
-    color: #FFFFFF;
-    gap: 22px;
+  text-align: center;
+  color: #ffffff;
+  gap: 22px;
 }
 
 .content.actions {
-    gap: 12px;
+  gap: 12px;
 }
 
-
-.action-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+.content-img {
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.content-2{
-    height: 100%;
-    position: relative;
-    background: url('../assets/images/background_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.content-img.page-2,
+.content-img.page-3 {
+  background: url("../assets/images/background_2.png");
+}
+
+.content-img.page-4 {
+  background: url("../assets/images/background_5.png");
 }
 
 .coin-left {
-    position: absolute;
-    left: 6%;
-    top: -6%;
-    transform: rotate(-10deg);
-    background: transparent;
+  position: absolute;
+  left: 6%;
+  top: -6%;
+  transform: rotate(-10deg);
+  background: transparent;
 }
 
 .coin-right {
-    z-index: 1;
-    position: absolute;
-    right: 13%;
-    top: -2%;
-    background: transparent;
+  z-index: 1;
+  position: absolute;
+  right: 13%;
+  top: -2%;
+  background: transparent;
 }
 
 .coins-right {
-    position: absolute;
-    right: 5%;
-    top: -11%;
-    transform: rotate(-10deg);
-    background: transparent;
-}
-
-
-.content-3 {
-    height: 100%;
-    position: relative;
-    background: url("../assets/images/background_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.content-4 {
-    height: 100%;
-    position: relative;
-    background: url("../assets/images/background_5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Styles for buttons and texts, animations and colors */
-.btn {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-}
-
-.btn-next {
-    width: 90%;
-    padding: 16px 16px;
-    gap: 8px;
-    background: #FFFFFF;
-    border: 1px solid #E52924;
-    border-radius: 5px;
-}
-
-.btn.back {
-    color: #737373;
-}
-
-.btn.skip {
-    color: #FFFFFF;
-}
-
-.text-17-m {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 22px;
-}
-
-.text-17-b {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.text-15-m {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-}
-
-h4 {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130.84%;
+  position: absolute;
+  right: 5%;
+  top: -11%;
+  transform: rotate(-10deg);
+  background: transparent;
 }
 
 .dots {
-    margin-top: 20px
+  margin-top: 20px;
 }
 .hidden {
-    display: none;
+  display: none !important;
 }
 
 @keyframes coupon_list {
-    from {
-      opacity: 0;
-      transform: none;
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, -60%, 0);
-    }
- }
- .coupon_list {
-    width: 65%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 450px;
-    left: 1px;
-    right: 0;
-    animation-name: coupon_list;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, -60%, 0);
+  }
 }
-
-.red {
-    color: #e52924 !important;
-} 
-
-.memory-cards {
-    margin: 70px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.cards-row {
-    flex-direction: row;
+.coupon_list {
+  width: 65%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90%;
+  left: 1px;
+  right: 0;
+  animation-name: coupon_list;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .bottom {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
 }
 
 .half-height {
-    height: 50vh;
+  height: 50vh;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .qr-icon {
-    z-index: 1;
-    bottom: 88%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+  z-index: 1;
+  bottom: 88%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.no-space {
+  margin: 0;
+  margin-top: 20%;
+  padding: 0;
 }
