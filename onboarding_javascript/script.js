@@ -10,7 +10,7 @@ function next(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 2500);
+    }, 3000);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");
@@ -30,7 +30,7 @@ function back(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 2500);
+    }, 3000);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");
@@ -65,7 +65,6 @@ function openLogin() {
 }
 
 function openRegistration() {
-  console.log("registration");
   if (window?.Android && typeof window.Android.openRegistration == "function") {
     Android.openRegistration();
     return null;
