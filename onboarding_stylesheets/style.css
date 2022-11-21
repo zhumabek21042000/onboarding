@@ -239,6 +239,7 @@ body::after {
     transform: translate3d(0, -60%, 0);
   }
 }
+
 .coupon_list {
   width: 65%;
   position: absolute;
@@ -251,6 +252,11 @@ body::after {
   animation-duration: 2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
+
+  -webkit-animation-name: coupon_list;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .bottom {
