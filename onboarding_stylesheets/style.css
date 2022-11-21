@@ -197,7 +197,7 @@ body {
   display: none !important;
 }
 
-@keyframes coupon_list {
+/* @keyframes coupon_list {
   from {
     opacity: 1;
     transform: none;
@@ -206,7 +206,7 @@ body {
     opacity: 1;
     transform: translate3d(0, -60%, 0);
   }
-}
+} */
 .coupon_list {
   width: 63%;
   position: absolute;
@@ -215,10 +215,10 @@ body {
   top: 90%;
   left: 1px;
   right: 0;
-  animation-name: coupon_list;
+  /* animation-name: coupon_list;
   animation-duration: 2s;
   animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 .bottom {

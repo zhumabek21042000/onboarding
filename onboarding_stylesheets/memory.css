@@ -10,14 +10,14 @@
   flex-direction: row;
 }
 
-@keyframes flip_card {
+/* @keyframes flip_card {
   from {
   }
   to {
     display: block;
     transform: rotateY(180deg);
   }
-}
+} */
 
 .flip-card {
   background-color: transparent;
@@ -38,10 +38,10 @@
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card-inner {
-  animation: flip_card;
+  /* animation: flip_card;
   animation-duration: 0.5s;
   animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 /* Position the front and back side */
@@ -65,14 +65,14 @@
 }
 
 .memory-cards-prize {
-  animation: scaleInOut 0.5s forwards;
+  /* animation: scaleInOut 0.5s forwards; */
   align-self: center;
   margin: auto;
   width: 80%;
   text-align: start;
 }
 
-@keyframes scaleInOut {
+/* @keyframes scaleInOut {
   0% {
     opacity: 0.2;
     transform: scale(0.7, 0.7);
@@ -85,7 +85,7 @@
     opacity: 1;
     transform: scale(1, 1);
   }
-}
+} */
 
 .prize {
   display: flex;
