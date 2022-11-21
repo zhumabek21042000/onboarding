@@ -161,15 +161,15 @@ body {
 
 @media only screen and (max-height: 700px), screen and (max-width: 360px) {
   .btn-medium {
-    min-width: 90px !important;
+    min-width: 100px !important;
   }
-  /* .loyalty-coupon-list {
+  .loyalty-coupon-list {
     margin-top: 13% !important;
-  } */
+  }
 }
 .btn-medium {
   padding: 8px;
-  min-width: 110px;
+  min-width: 126px;
   border-radius: 8px;
   border: none;
   font-weight: 500;

@@ -40,7 +40,6 @@ body {
 }
 
 .poster {
-  padding-top: 15%;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -50,66 +49,23 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-height: 720px), screen and (max-width: 360px) {
+@media only screen and (max-height: 700px), screen and (max-width: 360px) {
   .poster img {
     width: 86%;
     height: 96%;
   }
 
   .content.text {
-    margin-bottom: 30%;
-    margin-top: 0 !important;
+    margin-bottom: 50px;
   }
 
   .loyalty {
     right: 4% !important;
-    top: 51% !important;
-  }
-  .arrow-down {
-    right: 15% !important;
-    top: 53% !important;
-  }
-}
-
-@media only screen and (max-height: 700px) {
-  .content.text {
-    margin-top: -15%;
-  }
-
-  .loyalty {
-    right: 4% !important;
-    top: 51% !important;
-  }
-  .arrow-down {
-    right: 17% !important;
     top: 54% !important;
   }
-}
-@media only screen and (max-height: 670px) {
-  .content.text {
-    margin-bottom: 95px;
-  }
-
-  /* .welcome-text {
-
-  } */
-}
-
-@media only screen and (min-height: 800px) {
-  .content.text {
-    margin-bottom: 25%;
-  }
-  .loyalty {
-    right: 4% !important;
-    top: 56% !important;
-  }
   .arrow-down {
     right: 17% !important;
     top: 56% !important;
-  }
-
-  .page-2-text {
-    margin: 0 30px !important;
   }
 }
 
@@ -193,6 +149,9 @@ body {
   top: 64%;
 }
 
+.dots {
+  margin-top: 20px;
+}
 .hidden {
   display: none !important;
 }
@@ -208,7 +167,7 @@ body {
   }
 }
 .coupon_list {
-  width: 63%;
+  width: 65%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -251,25 +210,4 @@ body {
   margin: 0;
   margin-top: 20%;
   padding: 0;
-}
-
-.welcome-text {
-  margin: -105px 90px 30px 90px;
-}
-
-.page-2-text {
-  margin: 0 20px;
-}
-
-.center {
-  justify-content: center;
-}
-
-.start {
-  justify-content: flex-start;
-}
-
-.page-6-img {
-  width: 100%;
-  content: url("../onboarding_assets/images/background_6.png");
 }
