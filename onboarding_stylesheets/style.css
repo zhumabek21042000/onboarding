@@ -35,13 +35,12 @@ body::after {
     url("../onboarding_assets/svg/right_coin.svg")
     url("../onboarding_assets/svg/right_coins.svg")
     url("../onboarding_assets/svg/unfold_card_1.svg")
-    url("../onboarding_assets/svg/unfold_card_2.svg")
+    url("../onboarding_assets/svg/unfold_card_2.svg");
 }
 
 #page-1 {
   background: linear-gradient(180deg, #ff8652 8.33%, #e52924 52.6%);
 }
-
 
 #page-2,
 #page-5,
@@ -81,7 +80,7 @@ body::after {
   height: 100%;
 }
 
-@media only screen and (max-height: 700px), screen and (max-width: 360px) {
+@media only screen and (max-height: 720px), screen and (max-width: 360px) {
   .poster img {
     width: 86%;
     height: 96%;
@@ -101,6 +100,20 @@ body::after {
   }
 }
 
+@media only screen and (max-height: 700px) {
+  .content.text {
+    margin-bottom: 20%;
+  }
+
+  .loyalty {
+    right: 4% !important;
+    top: 51% !important;
+  }
+  .arrow-down {
+    right: 17% !important;
+    top: 54% !important;
+  }
+}
 @media only screen and (max-height: 670px) {
   .content.text {
     margin-bottom: 95px;
@@ -109,6 +122,24 @@ body::after {
   /* .welcome-text {
 
   } */
+}
+
+@media only screen and (min-height: 800px) {
+  .content.text {
+    margin-bottom: 10%;
+  }
+  .loyalty {
+    right: 4% !important;
+    top: 60% !important;
+  }
+  .arrow-down {
+    right: 17% !important;
+    top: 60% !important;
+  }
+
+  .page-2-text {
+    margin: 0 30px !important;
+  }
 }
 
 .content {
@@ -256,4 +287,8 @@ body::after {
 
 .welcome-text {
   margin: -105px 90px 30px 90px;
+}
+
+.page-2-text {
+  margin: 0 20px;
 }
