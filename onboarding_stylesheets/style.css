@@ -7,37 +7,6 @@ body {
   overflow: hidden;
 }
 
-body::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  content: url("../onboarding_assets/images/background_4.png")
-    url("../onboarding_assets/images/background_2.png")
-    url("../onboarding_assets/images/background_1.png")
-    url("../onboarding_assets/images/background_5.png")
-    url("../onboarding_assets/images/background_3.png")
-    url("../onboarding_assets/images/background_6.svg")
-    url("../onboarding_assets/icons/arrow_down.png")
-    url("../onboarding_assets/icons/arrow_up.png")
-    url("../onboarding_assets/icons/coin.png")
-    url("../onboarding_assets/svg/active_dot.svg")
-    url("../onboarding_assets/svg/coupon_animated.svg")
-    url("../onboarding_assets/svg/coupon_enjoyyit.svg")
-    url("../onboarding_assets/svg/dot.svg")
-    url("../onboarding_assets/svg/left_coin.svg")
-    url("../onboarding_assets/svg/loyalty.svg")
-    url("../onboarding_assets/svg/memory_card.svg")
-    url("../onboarding_assets/svg/prize_2.svg")
-    url("../onboarding_assets/svg/prize.svg")
-    url("../onboarding_assets/svg/qr.svg")
-    url("../onboarding_assets/svg/right_coin.svg")
-    url("../onboarding_assets/svg/right_coins.svg")
-    url("../onboarding_assets/svg/unfold_card_1.svg")
-    url("../onboarding_assets/svg/unfold_card_2.svg");
-}
-
 #page-1 {
   background: linear-gradient(180deg, #ff8652 8.33%, #e52924 52.6%);
 }
@@ -51,7 +20,7 @@ body::after {
 #page-3,
 #page-4 {
   width: 100%;
-  background: url("../onboarding_assets/images/background_4.png");
+  background: red;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -173,11 +142,11 @@ body::after {
 
 .content-img.page-2,
 .content-img.page-3 {
-  background: url("../onboarding_assets/images/background_2.png");
+  background: yellow;
 }
 
 .content-img.page-4 {
-  background: url("../onboarding_assets/images/background_5.png");
+  background: green;
 }
 
 .coin-left {
