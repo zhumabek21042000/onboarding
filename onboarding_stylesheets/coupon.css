@@ -233,10 +233,6 @@ body {
   animation: animated_coupon 0.5s forwards;
   animation-iteration-count: 1;
   animation-delay: 0.5s;
-
-  -webkit-animation: animated_coupon 0.5s forwards;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s;
 }
 
 .loyalty-coupon-list img:nth-child(4) {
