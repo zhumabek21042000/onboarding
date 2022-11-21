@@ -10,7 +10,7 @@ function next(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 3000);
+    }, 2500);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");
@@ -30,7 +30,7 @@ function back(id) {
     setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
-    }, 3000);
+    }, 2500);
   } else {
     setTimeout(() => {
       prize.classList.add("hidden");

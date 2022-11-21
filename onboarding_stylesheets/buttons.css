@@ -1,3 +1,15 @@
+.top {
+  position: absolute;
+  z-index: 1000;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 34px;
+}
+
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -21,7 +33,7 @@
 
 .btn.black {
   color: #737373;
-} 
+}
 
 .btn.skip {
   color: #ffffff;
@@ -41,6 +53,6 @@
 }
 
 .btn.register {
-    width: 90%;
-    padding: 16px 16px;
+  width: 90%;
+  padding: 16px 16px;
 }
