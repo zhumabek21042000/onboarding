@@ -163,9 +163,9 @@ body {
   .btn-medium {
     min-width: 90px !important;
   }
-  .loyalty-coupon-list {
+  /* .loyalty-coupon-list {
     margin-top: 13% !important;
-  }
+  } */
 }
 .btn-medium {
   padding: 8px;
@@ -229,7 +229,6 @@ body {
   position: absolute;
   right: 23%;
   top: -8px;
-  
   animation: animated_coupon 0.5s forwards;
   animation-iteration-count: 1;
   animation-delay: 0.5s;

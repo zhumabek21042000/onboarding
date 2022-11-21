@@ -7,6 +7,37 @@ body {
   overflow: hidden;
 }
 
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../onboarding_assets/images/background_4.png")
+    url("../onboarding_assets/images/background_2.png")
+    url("../onboarding_assets/images/background_1.png")
+    url("../onboarding_assets/images/background_5.png")
+    url("../onboarding_assets/images/background_3.png")
+    url("../onboarding_assets/images/background_6.svg")
+    url("../onboarding_assets/icons/arrow_down.png")
+    url("../onboarding_assets/icons/arrow_up.png")
+    url("../onboarding_assets/icons/coin.png")
+    url("../onboarding_assets/svg/active_dot.svg")
+    url("../onboarding_assets/svg/coupon_animated.svg")
+    url("../onboarding_assets/svg/coupon_enjoyyit.svg")
+    url("../onboarding_assets/svg/dot.svg")
+    url("../onboarding_assets/svg/left_coin.svg")
+    url("../onboarding_assets/svg/loyalty.svg")
+    url("../onboarding_assets/svg/memory_card.svg")
+    url("../onboarding_assets/svg/prize_2.svg")
+    url("../onboarding_assets/svg/prize.svg")
+    url("../onboarding_assets/svg/qr.svg")
+    url("../onboarding_assets/svg/right_coin.svg")
+    url("../onboarding_assets/svg/right_coins.svg")
+    url("../onboarding_assets/svg/unfold_card_1.svg")
+    url("../onboarding_assets/svg/unfold_card_2.svg");
+}
+
 #page-1 {
   background: linear-gradient(180deg, #ff8652 8.33%, #e52924 52.6%);
 }
@@ -40,6 +71,7 @@ body {
 }
 
 .poster {
+  padding-top: 15%;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -56,22 +88,23 @@ body {
   }
 
   .content.text {
-    margin-bottom: 50px;
+    margin-bottom: 30%;
+    margin-top: 0 !important;
   }
 
   .loyalty {
     right: 4% !important;
-    top: 54% !important;
+    top: 51% !important;
   }
   .arrow-down {
-    right: 17% !important;
-    top: 56% !important;
+    right: 15% !important;
+    top: 53% !important;
   }
 }
 
 @media only screen and (max-height: 700px) {
   .content.text {
-    margin-bottom: 20%;
+    margin-top: -15%;
   }
 
   .loyalty {
@@ -95,15 +128,15 @@ body {
 
 @media only screen and (min-height: 800px) {
   .content.text {
-    margin-bottom: 10%;
+    margin-bottom: 25%;
   }
   .loyalty {
     right: 4% !important;
-    top: 60% !important;
+    top: 56% !important;
   }
   .arrow-down {
     right: 17% !important;
-    top: 60% !important;
+    top: 56% !important;
   }
 
   .page-2-text {
@@ -191,9 +224,6 @@ body {
   top: 64%;
 }
 
-.dots {
-  margin-top: 20px;
-}
 .hidden {
   display: none !important;
 }
@@ -208,9 +238,8 @@ body {
     transform: translate3d(0, -60%, 0);
   }
 }
-
 .coupon_list {
-  width: 65%;
+  width: 63%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -261,4 +290,12 @@ body {
 
 .page-2-text {
   margin: 0 20px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.start {
+  justify-content: flex-start;
 }
