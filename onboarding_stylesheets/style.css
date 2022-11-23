@@ -187,14 +187,14 @@ div#preload {
   z-index: 1;
   position: absolute;
   right: 7%;
-  top: 59%;
+  bottom: 30%;
 }
 
 .arrow-down {
   z-index: 1;
   position: absolute;
   right: 19%;
-  top: 60%;
+  bottom: 34%;
 }
 
 .qr-icon {
