@@ -72,7 +72,6 @@ div#preload {
 .block.block-4 {
   z-index: 1;
   padding-top: 15%;
-  position: absolute;
 }
 
 .block.block-2::after {
@@ -213,7 +212,7 @@ div#preload {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 25%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -253,5 +252,21 @@ div#preload {
 @media only screen and (min-height: 800px) {
   .center-image {
     padding: 15% 0;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .loyalty {
+    z-index: 1;
+    position: absolute;
+    right: 7%;
+    bottom: 32%;
+  }
+  
+  .arrow-down {
+    z-index: 1;
+    position: absolute;
+    right: 19%;
+    bottom: 36%;
   }
 }

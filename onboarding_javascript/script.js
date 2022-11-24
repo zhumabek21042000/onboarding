@@ -84,12 +84,6 @@ function skip(id) {
   lastPage.classList.remove("hidden");
 }
 
-function couponsAnimation() {
-  $(function () {
-    $("#coupon_list").load("../coupon.html");
-  });
-}
-
 function openLogin() {
   if (window?.Android && typeof window.Android.openLogin == "function") {
     Android.openLogin();
