@@ -16,7 +16,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url("../onboarding_assets/images/background_1-min.png")
+  content: url("../onboarding_assets/images/background_1.png")
     url("../onboarding_assets/images/background_4.png");
 }
 
@@ -48,9 +48,7 @@ div#preload {
 
 .poster img {
   max-width: 100vw;
-  width: 400px;
-  height: 100%;
-  max-height: 50vh;
+    width: 400px;
 }
 .page {
   position: relative;
@@ -72,6 +70,10 @@ div#preload {
 .block.block-4 {
   z-index: 1;
   padding-top: 15%;
+}
+
+.block-2 div > img {
+  width: 65%;
 }
 
 .block.block-2::after {
@@ -159,26 +161,25 @@ div#preload {
 }
 
 .coin-right {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
-  right: 13%;
-  top: 7%;
+  right: 0%;
+  top: 8%;
   background: transparent;
 }
 
 .coins-right {
   z-index: -1;
   position: absolute;
-  right: 5%;
+  right: -15%;
   top: 2%;
-  transform: rotate(-10deg);
   background: transparent;
 }
 
 .arrow-up {
   z-index: 1;
   position: absolute;
-  right: 7%;
+  right: 6%;
   top: 20%;
 }
 
@@ -196,6 +197,10 @@ div#preload {
   bottom: 34%;
 }
 
+.arrow-down img {
+  width: 70%;
+}
+
 .qr-icon {
   z-index: 2;
   bottom: 82%;
@@ -205,6 +210,10 @@ div#preload {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.qr-icon img {
+  width: 60%;
 }
 
 .container {

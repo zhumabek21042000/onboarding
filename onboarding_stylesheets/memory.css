@@ -72,6 +72,10 @@
   background-color: transparent;
 }
 
+.flip-card-front img, .flip-card-back img {
+  width: 80%;
+}
+
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
