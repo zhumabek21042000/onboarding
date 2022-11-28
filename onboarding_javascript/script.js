@@ -1,3 +1,5 @@
+let timer = null;
+
 function next(id) {
   var currentPage = document.getElementById(`page-${id}`);
   var nextPage = document.getElementById(`page-${parseInt(id) + 1}`);
@@ -5,6 +7,8 @@ function next(id) {
   var nextDots = document.getElementById(`dots-${parseInt(id) + 1}`);
 
   var couponList = document.getElementById("coupon_list");
+
+  clearTimeout(timer);
 
   if (nextDots && currentDots) {
     setTimeout(() => {
@@ -27,7 +31,7 @@ function next(id) {
   nextPage.classList.remove("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) === 2) {
-    setTimeout(() => {
+    timer = setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
     }, 2500);
@@ -43,7 +47,9 @@ function back(id) {
   var currentDots = document.getElementById(`dots-${parseInt(id)}`);
   var nextDots = document.getElementById(`dots-${parseInt(id) - 1}`);
   var couponList = document.getElementById("coupon_list");
-
+  
+  clearTimeout(timer);
+  
   if (nextDots && currentDots) {
     setTimeout(() => {
       nextDots.children[parseInt(id) - 2].classList.add("active");
@@ -66,7 +72,7 @@ function back(id) {
   previousPage.classList.remove("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) - 1 === 3) {
-    setTimeout(() => {
+    timer = setTimeout(() => {
       prize.classList.remove("hidden");
       prize.previousElementSibling.classList.add("hidden");
     }, 2500);
