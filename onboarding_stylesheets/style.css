@@ -3,6 +3,10 @@
 @import "coupon.css";
 @import "memory.css";
 
+* {
+  user-select: none;
+}
+
 body {
   overflow: hidden;
   margin: 0;

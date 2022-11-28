@@ -27,8 +27,8 @@ function next(id) {
     couponList.classList.remove("coupon_list");
   }
 
-  currentPage.classList.add("hidden");
-  nextPage.classList.remove("hidden");
+  currentPage.classList.toggle("hidden");
+  nextPage.classList.toggle("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) === 2) {
     timer = setTimeout(() => {
@@ -68,8 +68,8 @@ function back(id) {
     couponList.classList.remove("coupon_list");
   }
 
-  currentPage.classList.add("hidden");
-  previousPage.classList.remove("hidden");
+  currentPage.classList.toggle("hidden");
+  previousPage.classList.toggle("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) - 1 === 3) {
     timer = setTimeout(() => {
