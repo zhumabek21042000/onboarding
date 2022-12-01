@@ -1,7 +1,72 @@
 let timer = null;
 
-let userLang = navigator.language || navigator.userLanguage;
-alert(`The language of browser and phone: ${userLang}`);
+const userlang = navigator.language || navigator.userLanguage;
+const locale = userlang.substring(0, 2);
+
+const translations = {
+  en: {
+    "back-title": "Back",
+    "skip-title": "Skip",
+    "next-title": "Continue",
+    "page-1-title": "Welcome to enjoyyit",
+    "page-1-subtitle": "Here you can save money easily!",
+    "page-2-title": "Discover great offers!",
+    "page-2-subtitle": "Collect enjoyyits and exchange them for coupons",
+    "page-3-title": "Win with our games!",
+    "page-3-subtitle": "Coupons, vouchers and many more specials",
+    "page-4-title": "Loyalty is rewarded!",
+    "page-4-subtitle": "Show your enjoyyit ID and get loyalty points",
+    "page-5-title": "Loyal customer love <3",
+    "page-5-subtitle": "Exchange loyalty points for special offers",
+    "page-6-title": "Let's go!",
+    "page-6-title-1": "By registering or logging in I accept the",
+    "page-6-title-2": "and",
+    "page-6-title-3": "of enjoyyit.",
+    "you-won-title": "YOU WON!!!",
+    "prize-title": "You have won a prize!",
+    "login-title": "Log in",
+    "register-title": "Register",
+    "pp-title": "privacy policy",
+    "tac-title": "terms of use",
+  },
+
+  de: {
+    "back-title": "Zurück",
+    "skip-title": "Überspringen",
+    "next-title": "Weiter",
+    "page-1-title": "Willkommen bei enjoyyit",
+    "page-1-subtitle": "Hier kannst du einfach sparen!",
+    "page-2-title": "Entdecke tolle Angebote!",
+    "page-2-subtitle": "Sammle enjoyyits und tausch sie gegen Coupons",
+    "page-3-title": "Gewinne mit unseren Spielen!",
+    "page-3-subtitle": "Coupons, Gutscheine und viele weiter Specials",
+    "page-4-title": "Treue wird belohnt!",
+    "page-4-subtitle": "Zeig deine enjoyyit ID und erhalte Treuepunkte",
+    "page-5-title": "Stammkundenliebe <3",
+    "page-5-subtitle": "Tausche Treuepunkte gegen Special-Angebote",
+    "page-6-title": "Los geht's!",
+    "page-6-title-1":
+      "Mit der Registrierung oder dem Login akzeptiere ich die ",
+    "page-6-title-2": "und",
+    "page-6-title-3": "von enjoyyit.",
+    "you-won-title": "DU HAST GEWONNEN!!!",
+    "prize-title": "Sie haben einen Preis gewonnen!",
+    "login-title": "Einloggen",
+    "register-title": "Registrieren",
+    "pp-title": "Datenschutzerklärung ",
+    "tac-title": "Nutzungsbedingungen ",
+  },
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+});
+
+function translateElement(element) {
+  const key = element.getAttribute("data-i18n-key");
+  const translation = translations[locale][key];
+  element.innerText = translation;
+}
 
 function next(id) {
   var currentPage = document.getElementById(`page-${id}`);

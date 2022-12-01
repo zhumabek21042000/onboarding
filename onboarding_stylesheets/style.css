@@ -3,7 +3,10 @@
 @import "coupon.css";
 @import "memory.css";
 
-* {
+*,
+*:before,
+*:after {
+  /* box-sizing: inherit; */
   user-select: none;
 }
 
@@ -26,7 +29,8 @@ body::after {
   overflow: hidden;
   z-index: -1;
   content: url("../onboarding_assets/images/background_1.png")
-    url("../onboarding_assets/images/background_4.png");
+    url("../onboarding_assets/images/background_4.png")
+    url("../onboarding_assets/images/background_6.png");
 }
 
 div#preload {
@@ -39,13 +43,9 @@ div#preload {
 
 #page-3,
 #page-4 {
-  background: url("../onboarding_assets/images/background_4.png");
-  background-repeat: no-repeat;
-  background-size: 100% 62%;
-  background-attachment: fixed;
-  -o-background-size: 100% 62%;
-  -moz-background-size: 100% 62%;
-  -webkit-background-size: 100% 62%;
+  /* background: url("../onboarding_assets/images/background_4.png"); */
+  /* background-repeat: no-repeat;
+  background-size: 100% 62%; */
 }
 
 .hidden {
@@ -84,7 +84,7 @@ div#preload {
 .block.block-3,
 .block.block-4 {
   z-index: 1;
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 .block-2 div > img {
@@ -99,7 +99,7 @@ div#preload {
   position: absolute;
   width: 150%;
   height: 100%;
-  top: 10%;
+  top: 11%;
   left: -25%;
   background: linear-gradient(180deg, #ff8652 8.33%, #e52924 52.6%);
 }
@@ -202,14 +202,14 @@ div#preload {
   z-index: 1;
   position: absolute;
   right: 7%;
-  bottom: 30%;
+  bottom: 131px;
 }
 
 .arrow-down {
   z-index: 1;
   position: absolute;
   right: 19%;
-  bottom: 34%;
+  bottom: 143px;
 }
 
 .arrow-down img {
@@ -283,18 +283,18 @@ div#preload {
   }
 }
 
-@media only screen and (max-width: 361px) {
+/* @media only screen and (max-width: 375px) {
   .loyalty {
     z-index: 1;
     position: absolute;
     right: 7%;
-    bottom: 32%;
+    bottom: 34%;
   }
 
   .arrow-down {
     z-index: 1;
     position: absolute;
     right: 19%;
-    bottom: 36%;
+    bottom: 38%;
   }
-}
+} */
