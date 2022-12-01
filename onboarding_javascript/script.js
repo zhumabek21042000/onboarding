@@ -1,5 +1,8 @@
 let timer = null;
 
+let userLang = navigator.language || navigator.userLanguage;
+alert(`The language of browser and phone: ${userLang}`);
+
 function next(id) {
   var currentPage = document.getElementById(`page-${id}`);
   var nextPage = document.getElementById(`page-${parseInt(id) + 1}`);
@@ -47,9 +50,9 @@ function back(id) {
   var currentDots = document.getElementById(`dots-${parseInt(id)}`);
   var nextDots = document.getElementById(`dots-${parseInt(id) - 1}`);
   var couponList = document.getElementById("coupon_list");
-  
+
   clearTimeout(timer);
-  
+
   if (nextDots && currentDots) {
     setTimeout(() => {
       nextDots.children[parseInt(id) - 2].classList.add("active");

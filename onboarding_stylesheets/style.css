@@ -12,6 +12,11 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 body::after {
@@ -37,6 +42,10 @@ div#preload {
   background: url("../onboarding_assets/images/background_4.png");
   background-repeat: no-repeat;
   background-size: 100% 62%;
+  background-attachment: fixed;
+  -o-background-size: 100% 62%;
+  -moz-background-size: 100% 62%;
+  -webkit-background-size: 100% 62%;
 }
 
 .hidden {
