@@ -54,6 +54,10 @@
   animation-duration: 0.5s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
+  -webkit-animation: flip_card;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .flip-card-front,
@@ -78,6 +82,7 @@
 
 .memory-cards-prize {
   animation: scaleInOut 0.5s forwards;
+  -webkit-animation: scaleInOut 0.5s forwards;
   align-self: center;
   padding-top: 25%;
   margin: 0 auto;
