@@ -3,10 +3,7 @@
 @import "coupon.css";
 @import "memory.css";
 
-*,
-*:before,
-*:after {
-  /* box-sizing: inherit; */
+* {
   user-select: none;
 }
 
@@ -16,6 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   min-height: -webkit-fill-available;
+  margin-top: -10px;
 }
 
 html {
@@ -29,7 +27,7 @@ body::after {
   overflow: hidden;
   z-index: -1;
   content: url("../onboarding_assets/images/background_1.png")
-    url("../onboarding_assets/images/background_4.png")
+    url("../onboarding_assets/images/background_4.jpg")
     url("../onboarding_assets/images/background_6.png");
 }
 
@@ -43,9 +41,9 @@ div#preload {
 
 #page-3,
 #page-4 {
-  /* background: url("../onboarding_assets/images/background_4.png"); */
-  /* background-repeat: no-repeat;
-  background-size: 100% 62%; */
+  background: url("../onboarding_assets/images/background_4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hidden {

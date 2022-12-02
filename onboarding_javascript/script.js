@@ -4,7 +4,7 @@ const userlang = navigator.language || navigator.userLanguage;
 const locale = userlang.substring(0, 2);
 
 const translations = {
-  en: {
+  "en": {
     "back-title": "Back",
     "skip-title": "Skip",
     "next-title": "Continue",
@@ -28,11 +28,17 @@ const translations = {
     "register-title": "Register",
     "pp-title": "privacy policy",
     "tac-title": "terms of use",
+    "expires-title": "Expires",
+    "days": "Days",
+    "type-1-title": "Lounge & Bar",
+    "type-2-title": "Sports & Health",
+    "type-3-title": "Leisure & Culture",
+    "type-4-title": "Eats & Drinks",
   },
 
-  de: {
+  "de": {
     "back-title": "Zurück",
-    "skip-title": "Überspringen",
+    "skip-title": "Skip  ",
     "next-title": "Weiter",
     "page-1-title": "Willkommen bei enjoyyit",
     "page-1-subtitle": "Hier kannst du einfach sparen!",
@@ -42,19 +48,24 @@ const translations = {
     "page-3-subtitle": "Coupons, Gutscheine und viele weiter Specials",
     "page-4-title": "Treue wird belohnt!",
     "page-4-subtitle": "Zeig deine enjoyyit ID und erhalte Treuepunkte",
-    "page-5-title": "Stammkundenliebe <3",
-    "page-5-subtitle": "Tausche Treuepunkte gegen Special-Angebote",
+    "page-5-title": "Stammkundenliebe",
+    "page-5-subtitle": "Tausche Treuepunkte gegen tolle Angebote",
     "page-6-title": "Los geht's!",
-    "page-6-title-1":
-      "Mit der Registrierung oder dem Login akzeptiere ich die ",
+    "page-6-title-1": "Mit der Registrierung oder dem Login akzeptiere ich die ",
     "page-6-title-2": "und",
     "page-6-title-3": "von enjoyyit.",
     "you-won-title": "DU HAST GEWONNEN!!!",
-    "prize-title": "Sie haben einen Preis gewonnen!",
+    "prize-title": "Hier ist dein Preis",
     "login-title": "Einloggen",
     "register-title": "Registrieren",
     "pp-title": "Datenschutzerklärung ",
     "tac-title": "Nutzungsbedingungen ",
+    "expires-title": "Läuft ab",
+    "days-title": "Tage",
+    "type-1-title": "Lounge & Bar",
+    "type-2-title": "Sport & Gesundheit",
+    "type-3-title": "Freizeit & Kultur",
+    "type-4-title": "Essen & Trinken",
   },
 };
 
@@ -95,8 +106,8 @@ function next(id) {
     couponList.classList.remove("coupon_list");
   }
 
-  currentPage.classList.toggle("hidden");
-  nextPage.classList.toggle("hidden");
+  currentPage.classList.add("hidden");
+  nextPage.classList.remove("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) === 2) {
     timer = setTimeout(() => {
@@ -129,6 +140,17 @@ function back(id) {
       }
     }, 50);
   }
+  if (parseInt(id) === 6) {
+    setTimeout(() => {
+      nextDots.children[parseInt(id) - 2].classList.add("active");
+      currentDots.children[parseInt(id) - 1].classList.remove("active");
+      if (parseInt(id) - 1 === 2) {
+        couponList.classList.add("coupon_list");
+      } else {
+        couponList.classList.remove("coupon_list");
+      }
+    }, 50);
+  }
 
   if (parseInt(id) - 1 === 2) {
     couponList.classList.add("coupon_list");
@@ -136,8 +158,8 @@ function back(id) {
     couponList.classList.remove("coupon_list");
   }
 
-  currentPage.classList.toggle("hidden");
-  previousPage.classList.toggle("hidden");
+  currentPage.classList.add("hidden");
+  previousPage.classList.remove("hidden");
   var prize = document.getElementById("prize");
   if (parseInt(id) - 1 === 3) {
     timer = setTimeout(() => {
