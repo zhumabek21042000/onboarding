@@ -42,7 +42,7 @@ div#preload {
 #page-4 {
   background: url("../onboarding_assets/images/background_4.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 65%;
 }
 
 .hidden {
@@ -233,7 +233,7 @@ div#preload {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 20%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -280,18 +280,6 @@ div#preload {
   }
 }
 
-/* @media only screen and (max-width: 375px) {
-  .loyalty {
-    z-index: 1;
-    position: absolute;
-    right: 7%;
-    bottom: 34%;
-  }
-
-  .arrow-down {
-    z-index: 1;
-    position: absolute;
-    right: 19%;
-    bottom: 38%;
-  }
-} */
+.logo {
+  width: 65%;
+}
