@@ -17,7 +17,7 @@ const translations = {
     "page-4-title": "Loyalty is rewarded!",
     "page-4-subtitle": "Show your enjoyyit ID and get loyalty points",
     "page-5-title": "Loyal customer love",
-    "page-5-subtitle": "Exchange loyalty points for special offers",
+    "page-5-subtitle": "Exchange loyalty points for exclusive offers",
     "page-6-title": "Let's go!",
     "page-6-title-1": "By registering or logging in I accept the",
     "page-6-title-2": "and",
@@ -34,6 +34,7 @@ const translations = {
     "type-2-title": "Sports & Health",
     "type-3-title": "Leisure & Culture",
     "type-4-title": "Eats & Drinks",
+    "try-it-title": "Try it!"
   },
 
   "de": {
@@ -66,6 +67,7 @@ const translations = {
     "type-2-title": "Sport & Gesundheit",
     "type-3-title": "Freizeit & Kultur",
     "type-4-title": "Essen & Trinken",
+    "try-it-title": "Versuchen Sie es!"
   },
 };
 
@@ -170,47 +172,23 @@ function back(id) {
     prize.classList.add("hidden");
     prize.previousElementSibling.classList.remove("hidden");
   }
-}
+} 
 
 function skip(id) {
   var currentPage = document.getElementById(`page-${id}`);
   currentPage.classList.add("hidden");
 
-  var lastPage = document.getElementById("page-6");
+  var lastPage = document.getElementById("page-5");
   lastPage.classList.remove("hidden");
 }
 
-function openLogin() {
-  if (window?.Android && typeof window.Android.openLogin == "function") {
-    Android.openLogin();
-    return null;
-  } else if (window.webkit && window.webkit.messageHandlers) {
-    webkit.messageHandlers.performAction.postMessage({
-      action: "openLogin",
-    });
-  }
-}
-function openRegistration() {
-  if (window?.Android && typeof window.Android.openRegistration == "function") {
-    Android.openRegistration();
-    return null;
-  } else if (window.webkit && window.webkit.messageHandlers) {
-    webkit.messageHandlers.performAction.postMessage({
-      action: "openRegistration",
-    });
-  }
-}
-
-function openLink(url) {
-  if (window?.Android && typeof window.Android.openInBrowser == "function") {
-    Android.openInBrowser(url);
+function openDiscovery() {
+  if (window?.Android && typeof window.Android.openDiscovery == "function") {
+    Android.openDiscovery();
     return;
   } else if (window.webkit && window.webkit.messageHandlers) {
     webkit.messageHandlers.performAction.postMessage({
-      action: "openInBrowser",
-      data: {
-        url: url,
-      },
+      action: "openDiscovery"
     });
   }
 }
