@@ -142,17 +142,6 @@ function back(id) {
       }
     }, 50);
   }
-  if (parseInt(id) === 6) {
-    setTimeout(() => {
-      nextDots.children[parseInt(id) - 2].classList.add("active");
-      currentDots.children[parseInt(id) - 1].classList.remove("active");
-      if (parseInt(id) - 1 === 2) {
-        couponList.classList.add("coupon_list");
-      } else {
-        couponList.classList.remove("coupon_list");
-      }
-    }, 50);
-  }
 
   if (parseInt(id) - 1 === 2) {
     couponList.classList.add("coupon_list");
